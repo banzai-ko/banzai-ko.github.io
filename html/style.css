@@ -209,7 +209,6 @@ div#info-actions {
   border-radius: 1000px;
   border: none;
   text-decoration: none;
-  transition: background 0.2s;
   border: none;
   line-height: 30px;
 
@@ -255,7 +254,7 @@ div#info-actions {
 }
 .switch.active {
   background: orange;
-  color: #0b0b0b
+  color: #0b0b0b;
   transition: .3s ease all;
 
 }
