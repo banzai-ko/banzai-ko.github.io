@@ -49,6 +49,11 @@ div#info-actions {
     width: 200px;
     border-radius:  32px 32px 0 0;
 }
+.img_formacion {
+  height: 80px;
+  border-radius:  32px 32px 0 0;
+  text-align: center;  
+}
 
 .logo-back {
     background-color: #2596be;
@@ -328,4 +333,33 @@ div#info-actions {
   to{
     width: 100%;
   }
+}
+
+/* services section css */
+.servicesText.card {
+  height: 280px;
+  cursor: pointer;
+}
+.servicesIcon {
+  font-size: 36px;
+  text-align: center;
+  width: 100%;
+}
+.card-title {
+  text-align: center;
+}
+.card:hover .servicesIcon {
+  color: #2810af;
+}
+.servicesText:hover {
+  border: 1px solid #2810af;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+  margin-top: 4rem;
+  padding-top: 4rem;
+}
+#contact {
+  padding-bottom: 4rem;
 }
