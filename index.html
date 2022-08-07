@@ -39,10 +39,6 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">
-            <i class="fa fa-home"></i>
-            <span class="sr-only">(current)</span>
-          </a>
         </li>
       </ul>
       <ul class="navbar-nav ">
@@ -50,17 +46,7 @@
           <button class="login_button" id="login" type="button">
             <span><a href="./login.html"><i class="fa-solid fa-pen text-dark"></i></a></span>
           </button>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link"
-            href="https://www.linkedin.com/in/cosme-fulanito-4768b91b5/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ar"><img
-              class="right-side-logo"
-              src="https://raw.githubusercontent.com/banzai-ko/portfolio-Frontend/main/material/linkedin.png"
-              alt=""></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/banzai-ko"><img class="right-side-logo"
-              src="https://raw.githubusercontent.com/banzai-ko/portfolio-Frontend/main/material/github.png" alt=""></a>
+
         </li>
         <li class="nav-item spacer">
           <button class="switch " id="switch" type="button">
@@ -73,181 +59,206 @@
   </nav>
   <!--/.Navbar -->
   <div>
-
   </div>
   <div id="profile-background">
     <img class="profile-background" class="img-fluid" alt="Responsive image"
       src="https://github.com/banzai-ko/portfolio-Frontend/raw/main/material/compressed_img/347292.jpg">
   </div>
-
+  <header>
+    <div class="heroImageContainer">
+      <img src="https://raw.githubusercontent.com/banzai-ko/portfolio-Frontend/main/material/One-Punch-Man.jpg"
+        alt="A picture of Saitama.">
+    </div>
+    <div class="heroDescription">
+      <p class="greeting">HI THERE! I'M</p>
+      <h1><span>SAITAMA</span> To GAROU</h1>
+      <p class="smallBio">A <span>HERO</span> FOR FUN.</p>
+      <div class="banner">
+        <div class="networks">
+          <div id="linkedin" class="networks-outer">
+            <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class="networks">
+          <div id="github" class="networks-outer">
+            <a href="">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <div id="info" style="padding: 16px">
     <div id="info-img">
-      <img class="profile-image"
-        src="https://raw.githubusercontent.com/banzai-ko/portfolio-Frontend/main/material/One-Punch-Man.jpg">
-      <div class="btn-edit"></div>
     </div>
     <div>
       <div id="info-data">
         <div>
-          <h1>Saitama</h1>
           <div id="info-company"> Web Developer en Madhouse </div>
           <div id="info-contact">
             <span>Kamchatka, Rusia </span>
-            <div>
-              <button class="btn btn-primary" type="button">Contacto</button>
+            <div id="info-actions">
+              <div class="btn-edit"> <a href="#" class="btn btn-primary">Curriculum</a>
+                <button class="btn btn-primary" type="button">Contacto</button>
+              </div>
             </div>
           </div>
         </div>
 
-        <div><hr></div>
-         <!-- Experience section-->
+        <div>
+          <hr>
+        </div>
+        <!-- Experience section-->
+        <section id="experience">
+          <div class="container mt-1">
+            <h1 class="text-center">Experiencia</h1>
+            <div class="row">
+              <div class="col-lg-4 mt-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h2>Madhouse</h2>
+                    <span>
+                      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, saepe.</p>
+                    </span>
+                    <a href="#"><img class="imgExp"
+                        src="https://raw.githubusercontent.com/banzai-ko/banzai-ko.github.io/main/material/Madhouse.webp"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                  <div class="card-body">
+                    <h2>ACME</h2>
+                    <span>
+                      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, saepe.</p>
+                    </span>
+                    <a href="#"><img class="imgExp" src="./material/acme.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                <div class="card portfolioContent">
+                  <div class="card-body">
+                    <h2>Umbrella Corporation inc.</h2>
+                    <span>
+                      <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, saepe.</p>
+                    </span>
+                    <a href="#"><img class="imgExp" src="./material/umbrellatext.png"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <div class="mat-card">
+          <div class=" card-titles">
+
+            <div class="btn-edit" onclick="cambiar_parrafo()">
+              <h2>Acerca de</h2>
+              <a href="" class="btn-right">
+                <i class="fa fa-pen"></i>
+              </a>
+            </div>
+            <div>
+              <p id="text-acercade">Héroe por diversión</p>
+            </div>
+            <div>
+              <input id="edit-acercade" type="text" oninput="getText(this.value)" style="display: none">
+            </div>
+
+            <input type="file" id="file1" onchange="showFile(this)">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Skill bars -->
+    <section id="skills">
+      <div class="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+          <div class="skill-name">Javascript</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="Avanzado" style="max-width:90%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">CSS</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="Intermedio" style="max-width:70%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">HTML</div>
+          <div class="skill-bar">
+            <div class="skill-per" per="Principiante" style="max-width:50%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <hr>
+    </div>
+    <section id="formacion">
+      <div>
+        <h1 class="text-center">Formación</h1>
+        <ul class="list-unstyled">
+          <li>
+            <h3>Universidad Nacional de Río Cuarto</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione modi molestias</p>
+            <div class="img_formacion"><img class="img_formacion" src="./material/unrc.png"></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div>
+      <hr>
+    </div>
     <section id="experience">
-      <div class="container mt-1">
-        <h1 class="text-center">Experiencia</h1>
+      <div class="container">
+        <h1 class="text-center">Roles</h1>
         <div class="row">
           <div class="col-lg-4 mt-4">
-            <div class="card">
+            <div class="card servicesText">
               <div class="card-body">
-                <h2>Madhouse</h2>
-                <span> <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, saepe.</p></span>
-                <a href="#"><img class="imgExp"src="https://raw.githubusercontent.com/banzai-ko/banzai-ko.github.io/main/material/Madhouse.webp"></a>
-                             </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
-              <div class="card-body">
-                <h2>ACME</h2>
-              <span> <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, saepe.</p></span>
-              <a href="#"><img class="imgExp"src="./material/acme.png"></a>
+                <i class="fas servicesIcon fa-code"></i>
+                <h4 class="card-title mt-3">Backend Developer</h4>
+                <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
+            <div class="card servicesText">
               <div class="card-body">
-                <h2>Umbrella Corporation inc.</h2>
-              <span> <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, saepe.</p></span>
-              <a href="#"><img class="imgExp"src="./material/umbrellatext.png"></a>
+                <i class='fas servicesIcon fa-wrench'></i>
+                <h4 class="card-title mt-3">SysAdmin</h4>
+                <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+              <div class="card-body">
+                <i class='far servicesIcon fa-check-circle'></i>
+                <h4 class="card-title mt-3">Website Deployment</h4>
+                <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
               </div>
             </div>
           </div>
         </div>
-    </section>
-      <div id="info-actions">
-        <div class="btn-edit"> <a href="#" class="btn btn-primary">Más Info</a>
-          <button type="button" class="btn btn-primary">Ver Más</button>
-          <button type="button" class="btn btn-primary">Github</button>
-        </div>
-      </div>
-      <div class="mat-card">
-        <div class=" card-titles">
-
-          <div class="btn-edit" onclick="cambiar_parrafo()">
-            <h2>Acerca de</h2>
-            <a href="" class="btn-right">
-              <i class="fa fa-pen"></i>
-            </a>
-          </div>
-          <div>
-            <p id="text-acercade">Héroe por diversión</p>
-          </div>
-          <div>
-            <input id="edit-acercade" type="text" oninput="getText(this.value)" style="display: none">
-          </div>
-
-          <input type="file" id="file1" onchange="showFile(this)">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--Skill bars -->
-  <section id="skills">
-    <div class="skills">
-      <h2>Skills</h2>
-      <div class="skill">
-        <div class="skill-name">Javascript</div>
-        <div class="skill-bar">
-          <div class="skill-per" per="Avanzado" style="max-width:90%"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name">CSS</div>
-        <div class="skill-bar">
-          <div class="skill-per" per="Intermedio" style="max-width:70%"></div>
-        </div>
-      </div>
-
-      <div class="skill">
-        <div class="skill-name">HTML</div>
-        <div class="skill-bar">
-          <div class="skill-per" per="Principiante" style="max-width:50%"></div>
-        </div>
-      </div>
-  </div>
-</section>
-  <div>
-    <hr>
-  </div>
-  <section id="formacion">
-    <div>
-      <h1 class="text-center">Formación</h1>
-      <ul class="list-unstyled">
-        <li>
-          <h3>Universidad Nacional de Río Cuarto</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione modi molestias</p>
-          <div class="img_formacion"><img class="img_formacion" src="./material/unrc.png"></div>
-          
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <div>
-    <hr>
-  </div>
-  <section id="experience">
-    <div class="container">
-      <h1 class="text-center">Roles</h1>
-      <div class="row">
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class="fas servicesIcon fa-code"></i>
-              <h4 class="card-title mt-3">Backend Developer</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class='fas servicesIcon fa-wrench'></i>
-              <h4 class="card-title mt-3">SysAdmin</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mt-4">
-          <div class="card servicesText">
-            <div class="card-body">
-              <i class='far servicesIcon fa-check-circle'></i>
-              <h4 class="card-title mt-3">Website Deployment</h4>
-              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
-                card's content.
-                Some quick example text to build on the card title and make up the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- portfolio section-->
     <section id="portfolio">
@@ -294,46 +305,7 @@
           </div>
         </div>
         <br>
-        <div class="row">
-          <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
-              <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Messaging Service</h4>
-                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-primary">Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
-              <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Twitter Clone</h4>
-                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-primary">Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4">
-            <div class="card portfolioContent">
-              <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-              <div class="card-body">
-                <h4 class="card-title">Blog App</h4>
-                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <div class="text-center">
-                  <a href="#" class="btn btn-primary">Link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
     </section>
 
     <!-- contact section-->
@@ -381,8 +353,9 @@
       </div>
     </section>
 
+    <!-- GO TOP BTN-->
 
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 
     <!-- FOOTER-->
 

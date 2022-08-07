@@ -1,6 +1,6 @@
 body{
   background: #F9F7F7;
-  font-family: Roboto, sans-serif;
+  font-family: 'Poppins',sans-serif;
   transition: .3s ease all;
 }
 
@@ -34,13 +34,6 @@ div#profile-backgroud  {
     background-position: center center;
 }
 
-.profile-image {
-    border-radius: 50%;
-    width: 152px;
-    height: 152px;
-    margin-top: -110px;
-    z-index: 1;
-}
 div#info-actions {
     display: flex;
 }
@@ -48,7 +41,6 @@ div#info-actions {
 .imgExp {
     width: 200px;
     border-radius:  10px 10px 0 0;
-   
 }
 .img_formacion {
   height: 80px;
@@ -77,6 +69,170 @@ div#info-actions {
   background-color: #3F72AF !important;
 }
 
+/*HEADER FORMATTER*/
+header .heroImageContainer {
+  margin-top: -300px;
+  z-index: 1;
+  width: 100%;
+}
+
+header .heroImageContainer img {
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  /*
+  -webkit-box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+          box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+  */
+  -webkit-box-shadow: 12px 0 #cac8f1, 24px 0 #d9d6f3, 36px 0 #e7e6f5;
+          box-shadow: 12px 0 #cec8f1, 24px 0 #d6d9f3, 36px 0 #e7e6f5;
+}
+
+header .heroDescription {
+ margin-top: -30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+}
+
+header .heroDescription .greeting {
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+header .heroDescription h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 0px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+header .heroDescription h1 span {
+  color: #3F72AF;
+  text-align: center;
+}
+
+header .heroDescription .smallBio {
+  letter-spacing: 1px;
+  color: #5F6F81;
+  font-size: 1rem;
+  min-width: 250px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+header .heroDescription .smallBio span {
+  color: #112D4E;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+header .heroDescription .socialsResume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0px;
+  text-align: center;
+}
+
+header .heroDescription .socialsResume .resumeLink {
+  background-color: #3F72AF;
+  padding: 15px 35px;
+  border-radius: 40px;
+  letter-spacing: 1.75px;
+  font-size: 2rem;
+  font-weight: 1500;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  color:#112D4E;
+  text-align: center;
+}
+
+header .heroDescription .socialsResume .resumeLink:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+}
+
+header .heroDescription .socialsResume .resumeLink:focus {
+  border-color: #80bdff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.socialsResume {
+  margin: auto;
+  width: 20%;
+ 
+}
+.socialsResume ul {
+  list-style: none;
+}
+
+.socialsList li a:hover {
+  -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.socialsList li a:focus {
+  border-color: #80bdff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.aboutContainer p {
+  line-height: 1.5;
+}
+
+.aboutContainer p span {
+  color: #112D4E;
+}
+
+.skillsContainer {
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.skillsGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(80px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+.skillsGrid li {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  width: 80px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+          box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+  border: 1px solid #eee;
+}
+
+.skillsGrid li p {
+  margin-top: 10px;
+}
+
+.skillsGrid li img {
+  width: 35px;
+  height: 35px;
+}
+/*END HEADER*/
+
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 .navbar {
@@ -91,6 +247,7 @@ div#info-actions {
 
 .spacer {
   margin-top: 10px;
+  margin-left: 10px;
 
 }
 .navbar-icon-top .navbar-nav .nav-link > .fa {
@@ -222,10 +379,7 @@ div#info-actions {
   text-decoration: none;
   border: none;
   line-height: 30px;
-
-
-
-
+  
 }
 .switch {
   background: #e6e8ed;
@@ -343,7 +497,9 @@ div#info-actions {
 
 /* services section css */
 .card.dark {
-  background-color: #395B64;
+  /*background-color: #395B64;*/
+  background-color: #6a6a6a; /* Set a background color */
+
   color: #E7F6F2;
   box-shadow: #e6e8ed;
   transition: .3s ease all;
@@ -375,4 +531,91 @@ div#info-actions {
 }
 #contact {
   padding-bottom: 4rem;
+}
+
+/* GO TOP BTN */
+#myBtn {
+  width: 35px;
+  height: 35px;
+  line-height: 30px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #3F72AF; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+/*BUTTONS*/
+.banner {
+  background: gray;
+  height:200px;
+  width: 500px;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  border-radius: 20px;
+}
+
+.networks {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  margin-left: 20px;
+  transform: translateY(-50%);
+}
+
+.networks-outer {
+  display: table;
+  position: relative;
+  width: 5em;
+  height: 5em;
+  border: 4px solid white;
+  border-radius: 4em;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.networks-outer a {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+.fab:before {
+  font-size: 70px;
+}
+
+.networks:hover .networks-outer {
+  background: rgba(255,255,255,.5);
+  cursor: pointer;
+}
+
+.networks:hover .fa-github {
+  color: #36465d;
+}
+
+#github.networks-outer:hover {
+  border-color: #36465d;
+}
+
+.networks:hover .fa-linkedin {
+  color: #0077B5;
+}
+
+#linkedin.networks-outer:hover {
+  border-color: #0077B5;
 }
