@@ -23,3 +23,14 @@ function showFile(input) {
         console.log(reader.error)
     };
 }
+
+const btnSwitch = document.querySelector('#switch');
+
+btnSwitch.addEventListener('click', () =>{
+    document.body.classList.toggle('dark');
+    btnSwitch.classList.toggle('active');
+    document.getElementById('navbar').classList.toggle('navbar-dark','bg-dark');
+    document.getElementById('navbar').classList.toggle('bg-dark');
+
+
+});
