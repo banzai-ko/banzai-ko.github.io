@@ -1,11 +1,11 @@
 body{
-  background: #f1f1f1;
+  background: #F9F7F7;
   font-family: Roboto, sans-serif;
   transition: .3s ease all;
 }
 
 body.dark {
-  background-color: rgb(53, 53, 57);
+  background-color: #2C3333;
   color: white;
   box-shadow: #e6e8ed;
   transition: .3s ease all;
@@ -47,12 +47,15 @@ div#info-actions {
 
 .imgExp {
     width: 200px;
-    border-radius:  32px 32px 0 0;
+    border-radius:  10px 10px 0 0;
+   
 }
 .img_formacion {
   height: 80px;
-  border-radius:  32px 32px 0 0;
-  text-align: center;  
+  padding: 10px 10px;
+  object-fit: contain;
+  margin-top: -50px;
+  margin-left: 300px;
 }
 
 .logo-back {
@@ -70,17 +73,20 @@ div#info-actions {
     margin-top: auto;
     margin-bottom: auto;
 }
+.btn-primary {
+  background-color: #3F72AF !important;
+}
 
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 .navbar {
   height: 80px;
-  background: #2596be;
+  background: #3F72AF;
   transition: .3s ease all;
   color: #e6e8ed;
 }
 .navbar a {
-  color: #e6e8ed;
+  color: #F9F7F7;
 }
 
 .spacer {
@@ -270,7 +276,7 @@ div#info-actions {
 
 }
 
-/* SKILLS
+/* SKILLS FALTA DARK MODE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .skills{
@@ -282,20 +288,20 @@ div#info-actions {
 .skill-name{
   font-size: 18px;
   font-weight: 700;
-  color: #0b0b0b;
+  color: #112D4E;
   text-transform: uppercase;
   margin: 20px 0;
 }
 
 .skill-bar{
   height: 14px;
-  background: #282828;
+  background: #112D4E;
   border-radius: 3px;
 }
 
 .skill-per{
   height: 14px;
-  background: #3486bd;
+  background: #3F72AF;
   border-radius: 3px;
   position: relative;
   animation: fillBars 2.5s 1;
@@ -305,7 +311,7 @@ div#info-actions {
   content: attr(per);
   position: absolute;
   padding: 6px 8px;
-  background: #f1f1f1;
+  background: #DBE2EF;
   border-radius: 6px;
   font-size: 14px;
   top: -45px;
@@ -319,7 +325,7 @@ div#info-actions {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: #f1f1f1;
+  background: #DBE2EF;
   top: -20px;
   right: 0;
   transform: translateX(50%) rotate(45deg);
@@ -336,6 +342,13 @@ div#info-actions {
 }
 
 /* services section css */
+.card.dark {
+  background-color: #395B64;
+  color: #E7F6F2;
+  box-shadow: #e6e8ed;
+  transition: .3s ease all;
+
+}
 .servicesText.card {
   height: 280px;
   cursor: pointer;
@@ -349,10 +362,10 @@ div#info-actions {
   text-align: center;
 }
 .card:hover .servicesIcon {
-  color: #2810af;
+  color: #3F72AF;
 }
 .servicesText:hover {
-  border: 1px solid #2810af;
+  border: 1px solid #3F72AF;
 }
 
 /* spacing on all sections */
